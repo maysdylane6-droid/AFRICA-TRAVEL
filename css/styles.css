@@ -1,0 +1,239 @@
+
+*, *::after, *::before {
+box-sizing: border-box;
+}
+
+:root {
+--primaraire:  linear-gradient(45deg, #f16623, #262262);
+--secondaire: rgb(55,155,155);
+--claire: linear-gradient(90deg, orange 9%, yellow 5%, orange, red);
+
+--lumiere: white;
+--stylé: aqua; 
+--doré: yellow;
+--foncé: black;
+--forte: #95122c;
+--linear: linear-gradient(45deg, yellow, orange, orange, green, green,green,orange);
+
+
+}
+
+/*index.html*/
+
+#body-index {
+    background: var(--claire)
+}
+
+.nav-bar {
+    border: 2px solid transparent;
+    background-color: var(--doré);
+    height: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.nav-bar:hover {
+    cursor: pointer;
+    background-color: var(--claire);
+}
+
+.para-2, .derniere-section-index {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.para-2 {
+    background-color: whitesmoke;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#cote-passage {
+    width: 600px;           /* photo personnage d accueil  */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+#h2-accueil{
+    position: relative;
+    top: 300px;
+}
+
+#para-accueil {
+    position: relative;
+    left: 0;
+    bottom: 300px;
+    background-color: lightyellow;
+    width: 300px;
+    height: 150px;
+}
+
+#Destinations {
+     position: relative;
+    left: 400px;
+    bottom: 80px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+#Destinations:hover {
+    cursor: pointer;
+    background-color: var(--primaraire);
+}
+
+#header {
+    text-align: center;    /*  titre d accueil  */
+    font-size: 4.5rem;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+
+}
+
+#logo-voyage {
+width: 200px;
+height: 200px;
+margin: 0;
+padding: 0;
+position: relative;
+right: 40px;
+bottom: 10px;
+}
+
+li {
+list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*fin index.html*/
+
+
+
+
+/*partie destination*/
+.image-destination {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.image-list-destination {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+
+
+#body-destination {
+    background: var(--linear); 
+    margin: 20px; 
+
+}
+
+.submit-destination {
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.submit-destination:hover {
+background-color: yellow;
+cursor: pointer;
+}
+
+/*fin partie destination*/
+
+
+/*partie tarifs*/
+.div-tarifs {
+    border: 1px solid transparent;
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    background: var(--primaraire);
+    color:azure;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.div-tarifs:hover {
+    cursor: pointer;
+    background:var(--forte) ;
+}
+
+.div-ensemble-tarifs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.submit-tarifs {
+    position: absolute;
+    bottom: 100px;
+  border-radius: 20px;
+}
+
+.submit-tarifs:hover {
+   cursor: pointer;
+    background:var(--doré) ; 
+}
+
+#tarifs-body {
+    background: var(--linear);
+}
+
+.li-tarif {
+    list-style-type:circle;
+}
+
+.tarif-premiere, .tarif-deuxieme, .tarif-troisieme {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+.nav-tarif {
+    position: relative;
+    left: 450px;
+}
+/*fin partie tarif*/
+
+
+
+/*partie contact*/
+.regroup-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+#legend-contact {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*fin partie contact*/

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header-title">
+        <img src="../imageindex/logo.jpg" alt="logo" id="logo-voyage"> 
+        <h1 id="header">AFRICA TRAVEL</h1>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+            <li nav-list-items><a href="index.html">Accueil</a></li>
+            <li nav-list-items><a href="destinations.html">Destinations</a></li>
+            <li nav-list-items><a href="tarifs.html"> Tarifs </a></li>
+            <li nav-list-items><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main-contact">
+
+        <form action="">
+            <fieldset class="regroup-contact">
+                <legend id="legend-contact">nous contacter</legend>
+<p>saisisser vos informations ici</p>
+                <label for="text">
+                    Nom et Prénom <input type="text" id="text" placeholder="mettez votre nom" name="text" required>
+                </label>
+
+                <label for="email">
+                    Email <input type="email" id="email" placeholder="eg.:@xample" name="email" required>
+                </label>
+
+                 <label for="telephone">
+                    Numero de télélephone <input type="tel" id="telephone" placeholder="+242 000001111" name="telephone" required>
+                </label>
+
+                <label for="destination">
+                   Destination :
+    <select name="destination">
+        <option value="senegal">Sénégal</option>
+        <option value="maroc">Maroc</option>
+         <option value="Congo">Congo</option>
+         <option value="Cote-ivoire">Cote d'ivoire</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Afrique du sud">Afrique du sud</option>
+    </select>
+                </label>
+                <button type="submit">Envoyer</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
